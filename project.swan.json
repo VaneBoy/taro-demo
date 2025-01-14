@@ -1,0 +1,23 @@
+{
+  "smartProgramRoot": "",
+  "projectname": "test-demo",
+  "description": "demo",
+  "appid": "117028823",
+  "setting": {
+    "urlCheck": true
+  },
+  "compilation-args": {
+    "common": {
+      "ignoreTransJs": true,
+      "ignorePrefixCss": true,
+      "ignoreUglify": true
+    }
+  },
+  "swan": {
+    "baiduboxapp": {
+      "swanJsVersion": "4.100.2",
+      "extensionJsVersion": "1.21.2"
+    }
+  },
+  "compileType": "miniprogram"
+}

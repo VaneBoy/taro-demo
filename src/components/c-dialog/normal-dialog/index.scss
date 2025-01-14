@@ -1,0 +1,35 @@
+.normal-dialog {
+  width: 622px;
+  height: 276px;
+  background: #FFFFFF;
+  border-radius: 32px;
+  padding: 48px;
+  box-sizing: border-box;
+
+  &-title {
+    color: rgba(0, 59, 134, 0.9);
+    margin-bottom: 48px;
+  }
+
+  &-btn {
+    gap: 24px;
+
+    &-cancel,
+    &-confirm {
+      width: 251px;
+      height: 80px;
+      border-radius: 40px;
+      justify-content: center;
+    }
+
+    &-cancel {
+      background: #ECF5FF;
+      color: #0071FF;
+    }
+
+    &-confirm {
+      background: #0071FF;
+      color: #FFFFFF;
+    }
+  }
+}

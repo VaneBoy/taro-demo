@@ -1,0 +1,11 @@
+page {
+  height: 100%; //这样你在页面中的view设置height:100%就起作用了
+}
+
+body {
+  overflow: hidden;
+}
+
+image {
+  display: block !important;
+}

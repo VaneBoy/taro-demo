@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "picasso-ai",
+  "description": "灵笔小程序",
+  "appid": "wxf053bf7c20cc5368",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}

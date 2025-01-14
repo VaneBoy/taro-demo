@@ -9,6 +9,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     CDialog: typeof import('./src/components/c-dialog/index.vue')['default']
     CustomDialog: typeof import('./src/components/c-dialog/custom-dialog/index.vue')['default']
-    NormalDialog: typeof import('./src/components/c-dialog/normal-dialog/index.vue')['default']
+    NutOverlay: typeof import('@nutui/nutui-taro')['Overlay']
   }
 }

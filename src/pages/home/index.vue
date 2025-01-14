@@ -3,6 +3,10 @@
     <!-- 画板区域-->
     <Canvas type="2d" canvas-id="draw-canvas" class="draw-canvas" disable-scroll="true" @touchstart="onTouchStart"
       @touchmove="onTouchMove" @touchend="onTouchEnd" />
+
+    <button style="margin: 20px;" @click="openDialog">点击弹窗</button>
+
+    <custom-dialog v-model:show="cueVisible" />
   </view>
 </template>
 
@@ -10,10 +14,11 @@
 import Taro from "@tarojs/taro";
 import "./index.scss";
 import { useDidShow } from "@tarojs/taro";
-import { reactive } from "vue";
+import { reactive, ref } from "vue";
 import { Canvas } from "@tarojs/components";
 
 let ctx = reactive<any>({});
+let cueVisible = ref(false);
 
 useDidShow(() => {
   Taro.nextTick(() => {
@@ -59,4 +64,8 @@ const onTouchMove = (e: any) => {
 const onTouchEnd = (e: any) => {
   console.log("onTouchEnd");
 };
+
+const openDialog = () => {
+  cueVisible.value = true
+}
 </script>
